@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <link rel="stylesheet" type="text/css" href="../lib/css/normalize.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../lib/css/skin.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../lib/css/frozen.css">
+    <link rel="stylesheet" href="rota.css">
+    <title>值班表</title>
+    <img src="../../images/homeBtn.png" class="homeBtn">
+    <div id="judge"></div>
+    <!-- <header class="ui-header ui-header-positive ui-border-b" id="homeNumber">
+        <i class="ui-icon-return active" id="back"></i>
+        <h1 class="DataClick" id="head">值班表</h1>
+    </header> -->
+</head>
+
+<body style="height:100%;overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling: touch;">
+    <!-- 标题栏 -->
+    <header class="ui-header ui-header-positive ui-border-b" id="homeNumber">
+        <i class="ui-icon-return active" id="back"></i>
+        <h1 class="headTitle" id="head">值班表</h1>
+    </header>
+
+
+    <section id="bodyContent">
+        <!-- 三栏操作按钮 -->
+        <div class="options">
+            <button class="left" id="option1">当前值班</button>
+            <button class="middle" id="option2">科技部</button>
+            <button class="right" id="option3">中金</button>
+        </div>
+
+        <p class="todayP">
+            <img src="rotaImages/calendar.png" alt="" class="calendarImage">
+            <span class="leftSpan">
+                <!-- 2018年7月1日 -->
+                <span class="yearY"></span>年
+                <span class="monthM"></span>月
+                <span class="dayD"></span>日
+            </span>
+            <span class="rightSpan"></span>
+        </p>
+
+        <!-- 当日值班列表渲染 -->
+        <ul class="todayList">
+
+        </ul>
+    </section>
+    <!-- 日历测试 -->
+    <div class="box">
+        <section class="date">
+            <div class="head">
+                <img class="img prev" src="rotaImages/pre.png" />
+                <div class="tomon">
+                    <span class="year"></span>年
+                    <span class="month"></span>月</div>
+                <img class="img next" src="rotaImages/next.png" />
+            </div>
+            <ol>
+                <li>周日</li>
+                <li>周一</li>
+                <li>周二</li>
+                <li>周三</li>
+                <li>周四</li>
+                <li>周五</li>
+                <li>周六</li>
+            </ol>
+            <ul id="_list">
+                <!-- handlebars渲染方案 -->
+                <!-- <span></span> -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="../../lib/handlebars.runtime-v4.0.3.js"></script>
+    <!-- 渲染当日值班情况列表 -->
+    <script id="todayScript" type="text/x-handlebars-template">
+    {{#each list}}
+    <li class="todayLi">
+        <span class="todaySpan todaySpanLeft">{{ADDRESS}}</span>
+        <span class="todaySpan">{{USERNAME}}</span>
+        <span class="todaySpan">
+        {{#if RESULT}}
+            <button class="overBtn">交接班</button>
+        {{/if}}
+        </span>
+    </li>
+    {{/each}}
+    </script>
+
+    <!-- 渲染科技部数据 -->
+    <script id="techTemplate" type="text/x-handlebars-template">
+            {{#each list}}
+            <li class="day" >
+                    <span class="number">{{DAY}}</span> 
+                    {{#each innerList}}
+                    {{#if USERNAME}}
+                    <span class="spanUp">{{USERNAME}}/{{TIMESLOT}}</span></span>
+                    {{/if}}
+                    {{/each}}
+                    {{#if USERNAME}}
+                    <span class="spanUp">{{USERNAME}}<span class="innerSpan">/{{TIMESLOT}}</span></span>
+                    {{/if}}
+            </li>
+            {{/each}}
+    </script>
+
+    <!-- 渲染中金数据 -->
+    <script id="midGoldTemplate" type="text/x-handlebars-template">
+            {{#each list}}
+            <li class="day" >
+                    <span class="number">{{DAY}}</span>
+                    <span class="spanUp"></span> 
+                    <span class="spanUp">{{USERNAME}}</span>
+            </li>
+            {{/each}}
+    </script>
+
+
+    <!-- 
+    <script id="objTemplate">
+
+        for (i = 0; i <= outObj.list.length - 1; i++) {
+            "<li class='day'>" +
+                "<span>" + outObj.list[i].DAY + "</span>" +
+                "<span class='spanUp'>" + innerList.USERNAME + innerList.TIMESLOT + '</span>' +
+                "<span class='spanMid'>" + USERNAME + TIMESLOT + '</span>' +
+                "<span class='spanBot'>" + USERNAME + TIMESLOT + '</span>' +
+                '</li>'
+        }
+
+    </script> -->
+
+
+
+    <script src="../../lib/scrat.js"></script>
+
+    <script src="rota.js"></script>
+</body>
+
+</html>

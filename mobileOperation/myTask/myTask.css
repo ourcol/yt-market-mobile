@@ -1,0 +1,153 @@
+* {
+  font-size: 1em;
+}
+.headBanner {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  background-color: #71CB43;
+  color: white;
+}
+.ui-icon-return {
+  position: absolute;
+  left: 0px;
+  /* width: 50px; */
+  color: white;
+}
+.home {
+  background-color: #ffffff;
+}
+#shift {
+  margin-left: 15px;
+  border-bottom: 1px solid #e0dfdb;
+  height: 55px;
+  line-height: 55px;
+  position: relative;
+}
+#handOver {
+  margin-left: 15px;
+  border-bottom: 1px solid #e0dfdb;
+  height: 55px;
+  line-height: 55px;
+  position: relative;
+}
+.home .left {
+  height: 30px;
+  float: left;
+  margin: 12px 11px 13px 1px;
+}
+.home .right {
+  height: 15px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  background-color: #71CB43;
+  color: white;
+  height: 40px;
+}
+.rowTitle {
+  /* padding: 5px; */
+  width: 22%;
+  position: relative;
+  left: 10px;
+}
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  border-bottom: 1px solid #eee;
+  height: 40px;
+}
+.rowContent {
+  /* padding: 5px; */
+  width: 22%;
+  position: relative;
+  left: 10px;
+}
+.area {
+  display: inline-block;
+}
+#handOverBody {
+  /* vertical-align: top; */
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  display: none;
+}
+.handOverLeft {
+  /* width: 50%; */
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20%;
+  /* float:right; */
+  margin-top: 10px;
+  font-size: 16px;
+}
+.handOverRight {
+  display: inline-block;
+  /* width:50%; */
+  vertical-align: top;
+  margin-top: 10px;
+  font-size: 16px;
+  /* float: right; */
+}
+/* 交班列表 */
+.overDetail {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+.divLeft {
+  display: inline-block;
+  width: 40%;
+}
+.divRight {
+  display: inline-block;
+  width: 50%;
+  float: right;
+}
+/* 换班列表 */
+.shiftDetail {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+#shiftTask {
+  display: none;
+  margin-top: 20px;
+}
+#handTask {
+  display: none;
+  margin-top: 20px;
+}
+button {
+  border-radius: 2px;
+  border: 1px;
+  background-color: white;
+  border-style: solid;
+  color: #71CB43;
+  width: 25%;
+  height: 20px;
+  height: 25px;
+}
+.summitBtn {
+  margin-top: 140px;
+  text-align: center;
+}
+#back{
+  padding-right: 30px;
+}

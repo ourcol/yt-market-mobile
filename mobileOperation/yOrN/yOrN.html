@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/frozen.css">
+
+    <link rel="stylesheet" type="text/css" href="../myTask/myTask.css">
+    <link rel="stylesheet" type="text/css" href="yOrN.css">
+    <title>交接班/换班任务</title>
+</head>
+
+<body>
+    <!-- 标题栏 -->
+    <section class="headBanner">
+        <i class="ui-icon-return" id="back"></i>
+        <h1 class="headTitle" id="head">交接班/换班任务</h1>
+    </section>
+
+    <!----换班任务 -->
+    <section id="shiftTask">
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- 交接班任务 -->
+    <div id="handOverTask">
+
+    </div>
+
+
+
+    <script id="handOverTaskTemplate" type="text/x-handlebars-template">
+            <div class="handOverDiv">
+            <p class="handOverLeft">交班人</p>
+            <p class="handOverRight">{{ROTA_NAME}}</p>
+        </div>
+
+        <div class="handOverDiv">
+            <p class="handOverLeft">交接时间</p>
+            <p class="handOverRight">{{CREATE_TIME}}</p>
+        </div>
+
+        <div class="handOverDiv">
+            <p class="handOverLeft">接班人</p>
+            <p class="handOverRight">{{ROTANAME}}</p>
+        </div>
+
+        <div class="handOverDiv">
+            <p class="handOverLeft">值班地点</p>
+            <p class="handOverRight">{{ADDRESS}}</p>
+        </div>
+
+
+        <div id="textareaDiv">
+            <div class="handOverDiv" id="textarea">
+                <p class="handOverLeft" id="Notice">交接事项</p>
+                <textarea readonly class="textarea1 handOverRight" name="" id="handOverNotice" cols="24" rows="6" >{{ROTA_CONTENT}}</textarea>
+            </div>
+        </div>
+
+        <div class="submitBtn" id="handOverSubmit">
+               确定
+            </div>
+    </script>
+    <script id="shiftTaskTemplate" type="text/x-handlebars-template">
+        <div class='shiftTaskDiv'>
+                <p class="shiftTaskLeft">换班人登录名</p>
+                <p class="shiftTaskRight">{{GIVER_ID}}</p>
+            </div>
+    
+            <div class='shiftTaskDiv'>
+                <p class="shiftTaskLeft">换班人姓名</p>
+                <p class="shiftTaskRight">{{GIVER_NAME}}</p>
+            </div>
+            <div class='shiftTaskDiv'>
+                <p class="shiftTaskLeft">值班地点</p>
+                <p class="shiftTaskRight">{{ADDRESS}}</p>
+            </div>
+            <div class='shiftTaskDiv'>
+                <p class="shiftTaskLeft">换前值班时间</p>
+                <p class="shiftTaskRight">{{UPDATE_TIME}}</p>
+            </div>
+            <div class='shiftTaskDiv'>
+                <p class="shiftTaskLeft">换后值班时间</p>
+                <p class="shiftTaskRight">{{CREATE_TIME}}</p>
+            </div>
+            <div class='shiftTaskDiv'>
+                <p class="shiftTaskLeft">换后时间段</p>
+                <p class="shiftTaskRight">{{TIMESLOT1}}</p>
+            </div>
+            <div class='shiftTaskDiv'>
+                <p class="shiftTaskLeft">值班人姓名</p>
+                <p class="shiftTaskRight">{{USERNAME}}</p>
+            </div>
+            <div class='shiftTaskDiv'>
+                <p class="shiftTaskLeft">意见</p>
+                <select class="shiftTaskRight" id="shiftAgreeOrNot">
+                    <option value="0">同意</option>
+                    <option value="1">不同意</option>
+                </select>
+            </div>
+            <div id="textareaDiv">
+                    <div class="shiftDiv" id="textarea">
+                        <p class="shiftLeft" id="shiftNotice">备注</p>
+                        <textarea class="textarea shiftRight" name="" id="shiftNoticeContent" cols="24" rows="6" placeholder="说点什么吧...."></textarea>
+                    </div>
+            </div>
+
+        <!-- 换班确认按钮 -->
+        <div class="submitBtn" id="shiftSubmit">
+                确定
+            </div>
+    </script>
+    <script src="../../lib/scrat.js"></script>
+    <script src="yOrN.js"></script>
+</body>
+
+</html>

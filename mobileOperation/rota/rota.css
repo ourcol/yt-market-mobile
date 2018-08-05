@@ -1,0 +1,503 @@
+.m_loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.14);
+  z-index: 9999;
+}
+
+.m_loadCont {
+  width: 8em;
+  height: 8em;
+  position: fixed;
+  top: 50%;
+  margin-top: -4em;
+  left: 50%;
+  margin-left: -4em;
+}
+
+.loadingstyle {
+  width: 41px;
+  height: 52px;
+  margin: 0 auto;
+  margin-top: 45%;
+  background: url("../../images/download.gif") no-repeat;
+  background-size: cover;
+}
+
+.ui-header-positive, .ui-footer-positive {
+  background-color: #71CB43;
+  color: #fff;
+}
+
+.options {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* font-size: 1em; */
+}
+
+button {
+  background-color: white;
+  border-style: solid;
+  color: #71CB43;
+  width: 25%;
+  height: 35px;
+  /* font-size: 1em; */
+}
+
+.left {
+  margin-left: 0px;
+  position: relative;
+  left: 7px;
+  background-color: #71CB43;
+  color: white;
+  border-color: #71CB43;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.right {
+  position: relative;
+  right: 7px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.todayP {
+  text-align: center;
+  height: 40px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #999999;
+}
+
+.todayLi {
+  height: 40px;
+  background: #FBFBFD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftSpan:horizontal {
+  color: black;
+}
+
+.todaySpan {
+  width: 33%;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.todaySpanLeft {
+  margin-left: 34px;
+}
+
+.overBtn {
+  height: 30px;
+  width: 60%;
+  color: white;
+  font-size: 13px;
+  background-image: linear-gradient(-90deg, rgba(144, 213, 82, 0.9) 0%, rgba(77, 180, 41, 0.9) 100%);
+  border-radius: 100px;
+}
+.overBtnTech {
+  height: 30px;
+  width: 60%;
+  color: white;
+  font-size: 13px;
+  background-image: linear-gradient(-90deg, rgba(144, 213, 82, 0.9) 0%, rgba(77, 180, 41, 0.9) 100%);
+  border-radius: 100px;
+}
+.overBtnMid {
+  height: 30px;
+  width: 60%;
+  color: white;
+  font-size: 13px;
+  background-image: linear-gradient(-90deg, rgba(144, 213, 82, 0.9) 0%, rgba(77, 180, 41, 0.9) 100%);
+  border-radius: 100px;
+}
+
+.monthChoose {
+  background-color: #e5e6e7;
+  height: 32px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.leftArrow {
+  margin-left: 20px;
+  float: left;
+}
+
+.month {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.rightArrow {
+  float: right;
+  margin-right: 20px;
+}
+
+html, body {
+  /* font-size: 62.5%; */
+  font-family: "Microsoft YaHei", "SimSun", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  background-color: #71CB43;
+  color: white;
+  height: 40px;
+  margin-top: 5px;
+  /* border-bottom: 1px solid #eee; */
+  margin-bottom: 5px;
+  /* text-align: center;
+    margin-top: 30px;
+    background-color: green;
+    color: white;
+     display: flex;
+    align-items: center; */
+  /*垂直居中*/
+  /* justify-content: center; */
+  /*水平居中*/
+  /* height: 40px;
+    font-size: 16px; */
+  /* height: -webkit-fill-available; */
+}
+
+.title span {
+  /* display: inline-block;
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px; */
+  width: 25%;
+  position: relative;
+  left: 30px;
+}
+
+.listView {
+  /* margin-top: 10px; */
+  /* background-color: lightgray; */
+  /* display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(64, 148, 44);
+    color: white;
+    */
+  /* margin-bottom:150px; */
+}
+
+.buttonSpan {
+  display: inline-block;
+  width: 50px;
+  left: -10px;
+  background-color: #71CB43;
+  border-radius: 2px;
+  color: white;
+  position: relative;
+}
+
+.handOver {
+  width: 22%;
+  position: relative;
+  border: none;
+}
+
+/* #handOver {
+    margin-left: 15px;
+    border-bottom: 1px solid #e0dfdb;
+    height: 55px;
+    line-height: 55px;
+    position: relative;
+}*/
+
+#handOverBody {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* font-size: 1em; */
+  display: none;
+}
+
+.summitBtn {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.handOverLeft {
+  /* width: 30%; */
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20%;
+  /* float: right; */
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.divLeft {
+  display: inline-block;
+  width: 40%;
+}
+
+.divRight {
+  display: inline-block;
+  width: 60%;
+  float: right;
+}
+
+.handOverRight {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.divBtn {
+  margin-top: 160px;
+  text-align: center;
+}
+
+/* 日历样式都在下面 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+.clear {
+  clear: both;
+}
+
+html, body {
+  font-family: "Microsoft YaHei", "SimSun", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.head .prev, .head .next {
+  text-align: center;
+  float: left;
+}
+
+.img {
+  height: 30px;
+  width: 30px;
+}
+
+.head .tomon {
+  width: 80%;
+  float: left;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.date ol {
+  width: 100%;
+  padding: 0;
+  float: left;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.date ol li {
+  display: block;
+  float: left;
+  width: 14.2857%;
+  text-align: center;
+  color: black;
+  border: none;
+  padding: 0;
+}
+
+section .date {
+  /* overflow: scroll;
+    -webkit-overflow-scrolling: touch; */
+}
+
+.date ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.date ul li {
+  display: block;
+  width: 14.2857%;
+  /* height: 4.5rem; */
+  /* height: 12rem; */
+  text-align: center;
+  /* font-size: 1.6rem; */
+  /* font-size: 50%; */
+  position: relative;
+}
+
+.date ul li i {
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0.3rem;
+  display: block;
+  height: 15px;
+  line-height: 15px;
+  width: 100%;
+  text-align: center;
+  color: #e35925;
+}
+
+@media screen and (min-width: 330px) {
+  .date ul li span {
+    /* 日历控件自带样式已注释 */
+    display: block;
+    /* width: 100%;
+        height: 100%;
+        line-height: 4.5rem;
+        text-align: center; */
+    /* display: inline-block; */
+    width: 100%;
+    /* height: 10%; */
+    height: 22%;
+    text-align: center;
+    font-size: 12px;
+  }
+  .date ul li span .innerSpan {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .date ul li span {
+    /* 日历控件自带样式已注释 */
+    display: block;
+    /* width: 100%;
+        height: 100%;
+        line-height: 4.5rem;
+        text-align: center; */
+    /* display: inline-block; */
+    width: 100%;
+    /* height: 10%; */
+    height: 20%;
+    text-align: center;
+    font-size: 9px;
+  }
+ 
+}
+
+.date ul .no_date {
+  background: #fafafa;
+  color: #999;
+}
+
+.date ul .weekend {
+  color: black;
+}
+
+.date ul .dutyDay {
+  background-color: #e35925;
+  border-radius: 50%;
+  color: white;
+}
+
+.date ul .firstDutyDay {
+  /* border-color: #71cb43; */
+  /* border-radius: 10%; */
+  border-style: solid;
+  border: 1px;
+  background-color: #e35925;
+  border-radius: 50%;
+}
+
+.date ul .today {
+  background-color: #71cb43;
+  border-radius: 50%;
+  color: white;
+}
+
+.date ul .act_date {
+  background: #71CB43;
+  color: #fff;
+}
+
+.date ul .act_ds {
+  background: #005bac;
+  color: #fff;
+}
+
+.box {
+  display: none;
+  /* overflow: scroll;
+    -webkit-overflow-scrolling: touch; */
+}
+
+/* textarea */
+
+.area {
+  margin-top: 12px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.month {
+  margin-top: 0px;
+}
+
+.calendarImage {
+  height: 14px;
+  width: 14px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.innerSpan {
+  display: inline;
+}
+
+.dutyDay {
+  background-color: #71cb43;
+  border-radius: 20%;
+  color: white;
+}
+
+.number {
+  font-size: 16px;
+}
+
+#back {
+  width: 60px;
+}

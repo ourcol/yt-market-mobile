@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/frozen.css">
+
+    <link rel="stylesheet" type="text/css" href="../myTask/myTask.css">
+    <link rel="stylesheet" type="text/css" href="remind.css">
+    <title>我的任务</title>
+</head>
+
+<body>
+    <section class="headBanner">
+        <i class="ui-icon-return" id="back"></i>
+        <h1 class="headTitle" id="head"></h1>
+    </section>
+    <div id="handOverContainer">
+        <!-- 列表标题 -->
+        <div id="handOverTitle">
+            <div class="title">交班人</div>
+            <div class="title">接班人</div>
+            <div class="title">值班地点</div>
+            <div class="title">交接时间</div>
+        </div>
+        <!-- 列表内容 -->
+        <section id="handOverContent">
+        </section>
+    </div>
+    <div id="shiftContainer">
+        <!-- 换班 -->
+        <div id="shiftTitle" class="title">
+            <span class="title">换班人姓名</span>
+            <span class="title">值班地点</span>
+            <span class="title">调班时间</span>
+            <span class="title">时间段</span>
+        </div>
+        <!-- 换班列表内容 -->
+        <section id="shiftContent">
+
+        </section>
+    </div>
+
+    <!-- 交接班任务 -->
+    <script id="handOverTemplate" type="text/x-handlebars-template">
+        <ul id="handOverContentUl">
+            {{#each list}}
+        <li class="handOverLi">
+                    <div class="content">{{USERNAME}}</div>
+                    <div class="content">{{ROTA_NAME}}</div>
+                    <div class="content">{{ADDRESS}}</div>
+                    <div class="content">{{CREATE_TIME}}</div>
+                    <div class="hideToTransfer">{{ROTA_CONTENT}}</div> 
+                    <div class="hideToTransfer">{{LOGIN_NAME}}</div>
+                    <div class="hideToTransfer">{{ROTA_LOGIN_NAME}}</div>
+                </li>
+            {{/each}}
+         </ul>
+    </script>
+
+    <!-- 换班任务 -->
+    <script id="shiftTemplate" type="text/x-handlebars-template">
+        <ul id="shiftContentUl">
+            {{#each list}}
+            <div class="shiftLi">
+                    <div class="content">{{USERNAME}}</div>
+                    <div class="content">{{ADDRESS}}</div>
+                    <div class="content">{{CREATE_TIME}}</div>
+                    <div class="content">{{TIMESLOT}}</div>
+                    <div class="hideToTransfer">{{LOGIN_NAME}}</div>
+                    <div class="hideToTransfer">{{ROTA_NAME}}</div> 
+                    <div class="hideToTransfer">{{ROTA_LOGIN_NAME}}</div>
+                    <div class="hideToTransfer">{{TIMESLOT1}}</div>
+                    <div class="hideToTransfer">{{UPDATE_TIME}}</div>
+            </div>
+            {{/each}}
+         </ul>
+    </script>
+    <script src="../../lib/scrat.js"></script>
+    <script src="remind.js"></script>
+</body>
+
+</html>

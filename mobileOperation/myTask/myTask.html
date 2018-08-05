@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="myTask.css">
+    <title>值班任务</title>
+</head>
+
+<body>
+    <section class="headBanner">
+        <i class="ui-icon-return" id="back"></i>
+        <h1 class="headTitle" id="head">值班任务</h1>
+    </section>
+    <section class="home" id="remind">
+        <div id="shift">
+            <img src="huanbantixing.png" class="left">
+            <p>换班提醒</p>
+            <img src="toPiece.png" class="right">
+        </div>
+        <div id="handOver">
+            <img src="jiaojiebantixing.png" class="left">
+            <p>交接班提醒</p>
+            <img src="toPiece.png" class="right">
+        </div>
+    </section>
+
+    <!-- 交接班 -->
+    <section class="overDetail">
+        <div class="row1">
+            <span class="rowTitle">交班人</span>
+            <span class="rowTitle">接班人</span>
+            <span class="rowTitle">值班地点</span>
+            <span class="rowTitle">交接时间</span>
+        </div>
+
+        <div class="row2" id="overList">
+            <span class="rowContent">丁大鹏</span>
+            <span class="rowContent">丁旭胜</span>
+            <span class="rowContent">科技部</span>
+            <span class="rowContent">2018/6/20</span>
+        </div>
+
+    </section>
+
+    <!-- 接班任务 -->
+    <section id="handOverBody">
+        <p class="handOverLeft">交班人：</p>
+        <p class="handOverRight">丁大鹏</p>
+        <p class="handOverLeft">交接时间：</p>
+        <p class="handOverRight">2018/6/10</p>
+        <p class="handOverLeft">接班人：</p>
+        <p class="handOverRight">丁旭胜</p>
+        <p class="handOverLeft">值班地点：</p>
+        <p class="handOverRight">科技部</p>
+        <p class="handOverLeft" style="display: inline-block">交接事项：</p>
+        <textarea class="area" name="" id="" cols="20" rows="10">--阿尔伯特爱因斯坦</textarea>
+        <div class="summitBtn">
+            <button>确定</button>
+
+        </div>
+    </section>
+    <!-- 换班 -->
+    <section class="shiftDetail">
+
+        <div class="row1">
+            <span class="rowTitle">换班人姓名</span>
+            <span class="rowTitle">值班地点</span>
+            <span class="rowTitle">调班时间</span>
+            <span class="rowTitle">时间段</span>
+        </div>
+
+        <div class="row2" id="shiftList">
+            <span class="rowContent">丁大鹏</span>
+            <span class="rowContent">科技部</span>
+            <span class="rowContent">2018/6/20</span>
+            <span class="rowContent">上午</span>
+        </div>
+
+
+    </section>
+    <!-- 我的提醒--换班任务 -->
+    <section id="shiftTask">
+        <div class='divLeft'>
+            <p class="handOverLeft">换班人登录名：</p>
+            <br>
+            <p class="handOverLeft">换班人姓名：</p>
+            <br>
+            <p class="handOverLeft">值班地点：</p>
+            <br>
+            <p class="handOverLeft">调班时间：</p>
+            <br>
+            <p class="handOverLeft">时间段：</p>
+            <br>
+            <p class="handOverLeft">值班人姓名：</p>
+            <br>
+            <p class="handOverLeft">意见：</p>
+            <br></br>
+            <p class="handOverLeft">备注：</p>
+            <br></br>
+            <!-- <p class="handOverLeft" style="display: inline-block">交接事项：</p> -->
+        </div>
+        <div class=divRight>
+            <p class="handOverRight">8162565</p>
+            <br>
+
+            <p class="handOverRight">丁大鹏</p>
+            <br>
+            <p class="handOverRight">科技部</p>
+            <br>
+            <p class="handOverRight">2018-05-01</p>
+            <br>
+            <!-- <p class="handOverRight">晚上</p> -->
+            <select class="handOverRight">
+                <option value="morning">上午</option>
+                <option value="afternoon">下午</option>
+                <option value="evening">晚上</option>
+                <option value="allDay">全天</option>
+            </select>
+            <br>
+            <p class="handOverRight">丁旭胜</p>
+            <br>
+            <select class="handOverRight">
+                <option value="agree">同意</option>
+                <option value="disagree">不同意</option>
+            </select>
+            <br>
+            <!-- <p class="handOverRight">好</p> -->
+            <textarea class="area" name="" id="" cols="16" rows="6" style="margin-top: 30px">--阿尔伯特爱因斯坦</textarea>
+        </div>
+
+        <div class="summitBtn">
+            <button>确定</button>
+
+        </div>
+    </section>
+
+    <!-- 我的提醒--交接班任务 -->
+    <section id="handTask">
+        <div class="divLeft">
+            <span class="handOverLeft">交班人：</span>
+            <br>
+            <span class="handOverLeft">交接时间：</span>
+            <br>
+            <span class="handOverLeft">接班人：</span>
+            <br>
+            <span class="handOverLeft">值班地点：</span>
+            <br>
+            <span class="handOverLeft">交接事项：</span>
+            <br>
+        </div>
+        <div class="divRight">
+            <span class="handOverRight">丁大鹏</span>
+            <br>
+            <span class="handOverRight">2018/6/8</span>
+            <br>
+            <span class="handOverRight">丁旭胜</span>
+            <br>
+            <span class="handOverRight">科技部</span>
+            <br>
+            <span class="handOverRight">--阿尔伯特爱因斯坦</span>
+        </div>
+
+        <!-- <p class="handOverLeft" style="display: inline-block">交接事项：</p> -->
+
+        <div class="summitBtn">
+            <button>确定</button>
+
+        </div>
+    </section>
+
+    <!-- 换班任务 -->
+
+    <script src="../../lib/scrat.js"></script>
+    <script src="myTask.js"></script>
+</body>
+
+</html>

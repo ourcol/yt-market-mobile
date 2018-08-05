@@ -1,0 +1,120 @@
+/* 加载图标 */
+
+.m_loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.14);
+  z-index: 9999;
+}
+
+.m_loadCont {
+  width: 8em;
+  height: 8em;
+  position: fixed;
+  top: 50%;
+  margin-top: -4em;
+  left: 50%;
+  margin-left: -4em;
+}
+
+.loadingstyle {
+  width: 41px;
+  height: 52px;
+  margin: 0 auto;
+  margin-top: 45%;
+  background: url("../../images/download.gif") no-repeat;
+  background-size: cover
+}
+@media screen and (max-width: 330px) {
+  .content {
+    font-size: 13px;
+  }
+}
+
+#handOverTitle {
+  height: 40px;
+}
+
+#shiftTitle {
+  height: 40px;
+}
+
+.content {
+  width: 25%;
+  float: left;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: PingFangSC-Regular;
+}
+
+#shiftContentUl {
+  padding-top: 40px;
+}
+
+li {
+  height: 40px;
+  display: block;
+}
+
+.rowTitle {
+  width: 25%;
+}
+
+#shiftTitle {
+  width: 100%;
+}
+
+#headTitle {
+  background: #FBFBFD;
+  height: 40px;
+}
+
+.title {
+  display: flex;
+  width: 25%;
+  float: left;
+  background: #FBFBFD;
+  font-family: PingFangSC-Light;
+  color: #999999;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.shiftTitle {
+  height: 40px;
+  width: 100%;
+}
+
+#shiftContainer {
+  display: none;
+  height: fit-content;
+}
+
+#handOverContainer {
+  display: none;
+}
+
+/* 传参数使用 */
+
+.hideToTransfer {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.noneDataRemind {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: grey;
+  font-size: 12px;
+}
+

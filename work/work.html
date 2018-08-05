@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;background-color: #ffffff;">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/skin.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="../work/work.css">
+    <title>工作台</title>
+</head>
+
+<body id="_content">
+    <div class="go_back"></div>
+    <div id="judge"></div>
+    <!--<p  class="homeBtn">退出</p>-->
+    <header class="ui-header ui-header-positive ui-border-b" style="background: url(../lib/images/top_bg.png) no-repeat;background-size: cover;">
+        <i class="ui-icon-return" id="ne" style="display: none" onclick=""></i>
+        <h1>工作台</h1>
+    </header>
+
+    <div id="userId"></div>
+    <div id="content">
+    </div>
+    <!-- 数据容器 -->
+    <div id="_list">
+    </div>
+
+    <!-- 固定数据“我的”图标-->
+    <!-- <div class="option my">
+        <img src="../work/images/9.png"> -->
+        <!-- <i class="circle">12</i> -->
+        <!-- <p>设置</p>
+    </div> -->
+
+    <!-- handlebars渲染模版 -->
+    <script id="template" type="text/x-handlebars-template"> 
+       
+        {{#each LIST}}
+            <div class="option {{MENU_SORT}}">
+                    <img src="../work/images/{{MENU_SORT}}.png">
+                    <p>{{MENU_NAME}}</p>
+            </div>
+        {{/each}}
+        
+    
+    </script>
+        
+    <script src="../lib/scrat.js"></script>
+    <script src="../work/work.js"></script>
+</body>
+
+</html>

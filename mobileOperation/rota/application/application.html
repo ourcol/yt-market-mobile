@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport"econtent="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../../lib/css/frozen.css">
+    <!-- <link rel="stylesheet" href="../rota.css"> -->
+    <link rel="stylesheet" href="application.css">
+    <title>申请</title>
+</head>
+
+<body>
+    <!-- 标题栏 -->
+    <section class="headBanner">
+        <i class="ui-icon-return" id="back"></i>
+        <h1 class="headTitle" id="head"></h1>
+    </section>
+
+    </header>
+    <!-- 交班 -->
+    <section id="handOverBody">
+
+
+    </section>
+
+    <!-- 换班 -->
+    <section id="shiftBody">
+
+
+    </section>
+
+
+    </section>
+    <!-- <div style="text-align:center">
+        <input type="month">
+    </div> -->
+
+
+    <button id="submit">确定</button>
+    <!-- <script src="../../lib/handlebars.runtime-v4.0.3.js"></script> -->
+
+    <!-- 交接班模版 -->
+    <script id="handover" type="text/x-handlebars-template">
+        <div id="handOverAppli">
+            <div class="handOverDiv">
+                <p class="handOverLeft">交班人</p>
+                <p class="handOverRight">{{USERNAME}}</p>
+            </div>
+
+            <div class="handOverDiv">
+                <p class="handOverLeft">交接时间</p>
+                <p class="handOverRight">{{CREATE_TIME}}</p>
+            </div>
+
+            <div class="handOverDiv">
+                <p class="handOverLeft">接班人</p>
+                <p class="handOverRight">{{ROTANAME}}</p>
+            </div>
+
+            <div class="handOverDiv">
+                <p class="handOverLeft">值班地点</p>
+                <p class="handOverRight">{{ADDRESS}}</p>
+            </div>
+
+
+            <div id="textareaDiv">
+                <div class="handOverDiv" id="textarea">
+                    <p class="handOverLeft" id="handOverNotice">交接事项</p>
+                    <textarea class="textarea handOverRight" name="" id="textArea" cols="24" rows="6" placeholder=""></textarea>
+                </div>
+            </div>
+
+
+        </div>
+
+    </script>
+
+    <!-- 换班模版 -->
+    <script id="shift" type="text/x-handlebars-template">
+        <div class="shiftDiv">
+            <p class="shiftLeft">值班人登录名</p>
+            <p class="shiftRight">{{LOGIN_NAME}}</p>
+        </div>
+
+        <div class="shiftDiv">
+            <p class="shiftLeft">值班人姓名</p>
+            <p class="shiftRight">{{USERNAME}}</p>
+        </div>
+
+        <div class="shiftDiv">
+            <p class="shiftLeft">值班地点</p>
+            <p class="shiftRight">{{ADDRESS}}</p>
+        </div>
+
+        <div class="shiftDiv">
+            <p class="shiftLeft">值班时间</p>
+            <!-- <p class="shiftRight">{{CREATE_TIME}}</p> -->
+            <input type="date" id="datePicker" value="2018-08-05"/>
+            
+        </div>
+      
+        <div class="shiftDiv">
+            <p class="shiftLeft">时间段</p>
+            <p class="shiftRight" id=timeSlot>{{TIMESLOT}}</p>
+            <select id="shiftOptionSelect">
+                <option value="上午" class="tech morAndAfter">上午</option>
+                <option value="下午" class="tech morAndAfter">下午</option>
+                <option value="晚上" class="tech workDayNight">晚上</option>
+                <option value="全天" class="mid">全天</option>
+            </select>
+            <button id="queryBtn">查询</button>
+        </div>
+        <div class="shiftDiv">
+            <p class="shiftLeft">接班人</p>
+            <p class="shiftRight" id="shiftAccepter"></p>
+        </div>
+     
+
+
+  
+
+        <!-- <div class="shiftDiv">
+            <p class="shiftLeft">交接人</p>
+            <p class="shiftRight">{{TIMESLOT}}</p>
+        </div> -->
+    </script>
+
+    <script src="../../../lib/scrat.js"></script>
+
+    <script src="application.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+{
+    "MSG": "交易成功!",
+    "LIST": [
+        {
+            "DAY": "7",
+            "SPANUP": "张三",
+            "SPANMID": "张三",
+            "SPANBOT": "张三",
+            "PERIOD":"全天"
+        },
+        {
+            "MENU_NAME": "财务审批",
+            "MENU_SORT": "2",
+            "MENU_NO": "2e028c86d51d4e82928f9811bcb3d9d9"
+        },
+        {
+            "MENU_NAME": "票据审批",
+            "MENU_SORT": "3",
+            "MENU_NO": "c0574f2f66564cfc84de50b7975fd04a"
+        },
+        {
+            "MENU_NAME": "移动驾驶舱",
+            "MENU_SORT": "5",
+            "MENU_NO": "a776e355018b48458890d7357b3f67f2"
+        },
+        {
+            "MENU_NAME": "移动运维",
+            "MENU_SORT": "7",
+            "MENU_NO": "6ef98c1dd18d43579a8004d4c494c2c4"
+        },
+        {
+            "MENU_NAME": "国际业务",
+            "MENU_SORT": "8",
+            "MENU_NO": "afe1e3610cf148a2941c27c95ddd0c05"
+        },
+        {
+            "MENU_NAME": "移动CRM",
+            "MENU_URL": "123",
+            "MENU_SORT": "6",
+            "MENU_NO": "crm"
+        },
+        {
+            "MENU_NAME": "移动OA",
+            "MENU_URL": "dsadsa",
+            "MENU_SORT": "4",
+            "MENU_NO": "oa"
+        }
+    ],
+    "STATUS": "1"
+}
